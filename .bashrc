@@ -4,6 +4,8 @@ case $- in
       *) return;;
 esac
 
+export PS1="\[\e[35m\]\u\[\e[m\]\[\e[34m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\] \[\e[35m\]\w\[\e[m\] \[\e[34m\]>\[\e[m\]"
+
 HISTCONTROL=ignoreboth
 shopt -s histappend
 HISTSIZE=1000
